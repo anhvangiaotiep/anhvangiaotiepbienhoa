@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Trang chủ -->
   <url>
     <loc>https://anhvangiaotiepbienhoa.pages.dev/</loc>
-    <lastmod>2026-11-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-17T06:14:21+00:00</lastmod>
+    <changefreq>daily</changefreq>
   </url>
+
+  <!-- Trang Khóa học & Đào tạo -->
+  <url>
+    <loc>https://anhvangiaotiepbienhoa.pages.dev/tieng-anh-giao-tiep-bien-hoa</loc>
+    <lastmod>2026-11-17T06:14:21+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Trang Giới thiệu Trung tâm -->
+  <url>
+    <loc>https://anhvangiaotiepbienhoa.pages.dev/trung-tam-tieng-anh-giao-tiep-bien-hoa</loc>
+    <lastmod>2026-11-17T06:14:21+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Trang Chi tiết Khóa học -->
+  <url>
+    <loc>https://anhvangiaotiepbienhoa.pages.dev/khoa-hoc-tieng-anh-giao-tiep-bien-hoa</loc>
+    <lastmod>2026-11-17T06:14:21+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+
 </urlset>
