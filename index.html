@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trung Tâm Anh Văn Giao Tiếp Biên Hòa | Đồng Nai</title>
   <meta name="description" content="Học tiếng Anh giao tiếp thực chiến tại Biên Hòa. Xây dựng nền tảng, cải thiện phản xạ nghe – nói cho người mất gốc, sinh viên và người đi làm.">
+  <meta name="keywords" content="anh văn giao tiếp biên hòa, học tiếng anh biên hòa, tiếng anh người mất gốc, tiếng anh đi làm đồng nai">
   <link rel="canonical" href="https://anhvangiaotiepbienhoa.pages.dev/">
   
   <style>
@@ -129,18 +130,18 @@
       letter-spacing: 0.5px;
     }
 
-    /* Thanh điều hướng 5 Tabs */
+    /* Thanh điều hướng 6 Tabs */
     .tab-nav {
       display: flex;
-      gap: 6px;
+      gap: 4px;
       flex-wrap: wrap;
     }
 
     .tab-btn {
       background: transparent;
       border: none;
-      padding: 10px 16px;
-      font-size: 0.95rem;
+      padding: 9px 13px;
+      font-size: 0.92rem;
       font-weight: 600;
       color: var(--text-muted);
       border-radius: 8px;
@@ -164,9 +165,9 @@
       background-color: var(--accent);
       color: #111827;
       font-weight: 700;
-      padding: 10px 18px;
+      padding: 10px 16px;
       border-radius: 8px;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       transition: var(--transition);
     }
 
@@ -202,7 +203,7 @@
 
     .section-header {
       text-align: center;
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto 40px;
     }
 
@@ -410,7 +411,262 @@
       color: var(--accent-hover);
     }
 
-    /* ================= TAB 3: GIỚI THIỆU & PHƯƠNG PHÁP ================= */
+    /* ================= TAB 3: GÓC CHIA SẺ (BLOG / BÀI VIẾT) ================= */
+    .blog-toolbar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+      background: var(--bg-white);
+      padding: 16px 20px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 260px;
+      display: flex;
+      align-items: center;
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0 14px;
+    }
+
+    .search-box input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      padding: 10px 8px;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      outline: none;
+      font-family: inherit;
+    }
+
+    .filter-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-chip {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-chip:hover, .filter-chip.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 24px;
+    }
+
+    .blog-card {
+      background: var(--bg-white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+      border-color: #93c5fd;
+    }
+
+    /* Thanh tiêu đề từng bài viết */
+    .blog-card-header {
+      background: linear-gradient(135deg, #f0f7ff 0%, #e0efff 100%);
+      padding: 18px 22px;
+      border-bottom: 1px solid #dbeafe;
+    }
+
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .blog-title {
+      font-size: 1.2rem;
+      color: var(--primary-dark);
+      line-height: 1.35;
+      font-weight: 800;
+    }
+
+    /* Phần mô tả và keywords của từng bài */
+    .blog-card-body {
+      padding: 20px 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .blog-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .blog-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .kw-tag {
+      background-color: #f1f5f9;
+      color: #475569;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .kw-tag:hover {
+      background-color: #dbeafe;
+      color: var(--primary);
+    }
+
+    .read-more-btn {
+      background-color: #eff6ff;
+      color: var(--primary);
+      border: 1px solid #bfdbfe;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-align: center;
+      width: 100%;
+      transition: var(--transition);
+      font-family: inherit;
+    }
+
+    .read-more-btn:hover {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    /* Khung đọc chi tiết bài viết (Modal) */
+    .article-modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      padding: 20px;
+      overflow-y: auto;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .article-modal-backdrop.open {
+      display: flex;
+    }
+
+    .article-modal {
+      background: var(--bg-white);
+      max-width: 780px;
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+      margin: 30px auto;
+      overflow: hidden;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .modal-header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 26px 30px;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255,255,255,0.15);
+      color: white;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 1.25rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-close:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    .modal-body {
+      padding: 30px;
+      color: var(--text-main);
+      line-height: 1.75;
+    }
+
+    .modal-body h4 {
+      color: var(--primary-dark);
+      margin: 18px 0 8px;
+      font-size: 1.15rem;
+    }
+
+    .modal-body ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    .modal-body li {
+      margin-bottom: 8px;
+    }
+
+    .vocab-box {
+      background: #f8fafc;
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin: 14px 0;
+    }
+
+    /* ================= TAB 4: GIỚI THIỆU & PHƯƠNG PHÁP ================= */
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -460,7 +716,7 @@
       margin-bottom: 8px;
     }
 
-    /* ================= TAB 4: FAQ ================= */
+    /* ================= TAB 5: FAQ ================= */
     .faq-list {
       max-width: 800px;
       margin: 0 auto;
@@ -510,7 +766,7 @@
       color: var(--text-muted);
     }
 
-    /* ================= TAB 5: LIÊN HỆ ================= */
+    /* ================= TAB 6: LIÊN HỆ ================= */
     .contact-wrapper {
       display: grid;
       grid-template-columns: 1.2fr 1fr;
@@ -624,13 +880,16 @@
     .float-zalo { background-color: #0068ff; font-size: 0.85rem; }
 
     /* ================= RESPONSIVE MOBILE ================= */
+    @media (max-width: 960px) {
+      .cta-header { display: none; }
+      .header-inner { justify-content: center; }
+    }
+
     @media (max-width: 860px) {
       .hero-grid, .about-grid, .contact-wrapper {
         grid-template-columns: 1fr;
       }
       .hero h1 { font-size: 2rem; }
-      .cta-header { display: none; }
-      .header-inner { justify-content: center; }
       .tab-nav { justify-content: center; }
     }
   </style>
@@ -645,7 +904,7 @@
     </div>
   </div>
 
-  <!-- Header & Menu 5 Tabs -->
+  <!-- Header & Menu 6 Tabs -->
   <header>
     <div class="header-inner">
       <div class="brand" onclick="openTab('trang-chu')" role="button" tabindex="0" aria-label="Về trang chủ">
@@ -656,11 +915,12 @@
         </div>
       </div>
 
-      <nav class="tab-nav" aria-label="Điều hướng 5 trang chính">
+      <nav class="tab-nav" aria-label="Điều hướng các trang chính">
         <button class="tab-btn active" data-tab="trang-chu" onclick="openTab('trang-chu')">Trang chủ</button>
         <button class="tab-btn" data-tab="khoa-hoc" onclick="openTab('khoa-hoc')">Khóa học</button>
-        <button class="tab-btn" data-tab="gioi-thieu" onclick="openTab('gioi-thieu')">Giới thiệu & Phương pháp</button>
-        <button class="tab-btn" data-tab="faq" onclick="openTab('faq')">Hỏi đáp (FAQ)</button>
+        <button class="tab-btn" data-tab="goc-chia-se" onclick="openTab('goc-chia-se')">Góc Chia Sẻ</button>
+        <button class="tab-btn" data-tab="gioi-thieu" onclick="openTab('gioi-thieu')">Giới thiệu</button>
+        <button class="tab-btn" data-tab="faq" onclick="openTab('faq')">FAQ</button>
         <button class="tab-btn" data-tab="lien-he" onclick="openTab('lien-he')">Liên hệ</button>
       </nav>
 
@@ -852,7 +1112,41 @@
     </div>
 
     <!-- ========================================================= -->
-    <!-- TAB 3: GIỚI THIỆU & PHƯƠNG PHÁP                           -->
+    <!-- TAB 3: GÓC CHIA SẺ (BÀI VIẾT HÀNG NGÀY)                   -->
+    <!-- ========================================================= -->
+    <div id="goc-chia-se" class="tab-panel">
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge">GÓC CHIA SẺ KIẾN THỨC</span>
+            <h2>Bài viết & Mẹo học tiếng Anh giao tiếp mỗi ngày</h2>
+            <p>Tổng hợp các mẫu câu thực tế, từ vựng chuyên ngành, bí quyết luyện phản xạ nghe – nói dành cho người mất gốc và người đi làm.</p>
+          </div>
+
+          <!-- Thanh tìm kiếm & lọc theo chủ đề -->
+          <div class="blog-toolbar">
+            <div class="search-box">
+              <span>🔍</span>
+              <input type="text" id="blog-search" placeholder="Tìm bài viết theo tiêu đề, mô tả hoặc keywords..." oninput="filterArticles()">
+            </div>
+            <div class="filter-tags">
+              <button class="filter-chip active" onclick="setCategoryFilter('all', this)">Tất cả</button>
+              <button class="filter-chip" onclick="setCategoryFilter('Mất gốc', this)">Người mất gốc</button>
+              <button class="filter-chip" onclick="setCategoryFilter('Công sở', this)">Công sở & Phỏng vấn</button>
+              <button class="filter-chip" onclick="setCategoryFilter('Phản xạ', this)">Luyện phản xạ</button>
+            </div>
+          </div>
+
+          <!-- Danh sách các bài viết (Mỗi bài có Thanh tiêu đề, Mô tả, Keywords) -->
+          <div class="blog-grid" id="blog-list">
+            <!-- Nội dung bài viết sẽ được render tự động từ mảng dữ liệu JavaScript bên dưới để bạn cực kỳ dễ thêm bài mới hàng ngày -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- TAB 4: GIỚI THIỆU & PHƯƠNG PHÁP                           -->
     <!-- ========================================================= -->
     <div id="gioi-thieu" class="tab-panel">
       <section class="section">
@@ -923,7 +1217,7 @@
     </div>
 
     <!-- ========================================================= -->
-    <!-- TAB 4: CÂU HỎI THƯỜNG GẶP (FAQ)                           -->
+    <!-- TAB 5: CÂU HỎI THƯỜNG GẶP (FAQ)                           -->
     <!-- ========================================================= -->
     <div id="faq" class="tab-panel">
       <section class="section">
@@ -970,7 +1264,7 @@
     </div>
 
     <!-- ========================================================= -->
-    <!-- TAB 5: LIÊN HỆ & TƯ VẤN                                   -->
+    <!-- TAB 6: LIÊN HỆ & TƯ VẤN                                   -->
     <!-- ========================================================= -->
     <div id="lien-he" class="tab-panel">
       <section class="section">
@@ -1041,6 +1335,22 @@
     </div>
   </main>
 
+  <!-- Modal đọc chi tiết bài viết -->
+  <div id="article-modal-backdrop" class="article-modal-backdrop" onclick="closeArticleModal(event)">
+    <div class="article-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <button class="modal-close" onclick="closeArticleModal()" aria-label="Đóng bài viết">✕</button>
+        <div id="modal-meta" style="font-size: 0.85rem; color: #fde047; font-weight: 700; margin-bottom: 6px;"></div>
+        <h3 id="modal-title" style="font-size: 1.5rem; line-height: 1.3; padding-right: 30px;"></h3>
+        <p id="modal-desc" style="font-size: 0.95rem; color: #cbd5e1; margin-top: 8px;"></p>
+      </div>
+      <div class="modal-body">
+        <div id="modal-content"></div>
+        <div id="modal-keywords" style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 8px; align-items: center;"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -1052,6 +1362,7 @@
         <div class="footer-links">
           <button onclick="openTab('trang-chu')">Trang chủ</button>
           <button onclick="openTab('khoa-hoc')">Khóa học</button>
+          <button onclick="openTab('goc-chia-se')">Góc Chia Sẻ</button>
           <button onclick="openTab('gioi-thieu')">Giới thiệu</button>
           <button onclick="openTab('faq')">FAQ</button>
           <button onclick="openTab('lien-he')">Liên hệ</button>
@@ -1069,58 +1380,248 @@
     <a href="https://zalo.me/0903774745" target="_blank" rel="noopener" class="float-btn float-zalo" title="Nhắn Zalo Thầy Trần" aria-label="Nhắn Zalo">Zalo</a>
   </div>
 
-  <!-- JavaScript xử lý chuyển đổi 5 Tabs & đồng bộ URL -->
+  <!-- JavaScript xử lý Tabs & Hệ thống Bài viết Góc Chia Sẻ -->
   <script>
-    // Cập nhật năm hiện tại ở Footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    const validTabs = ['trang-chu', 'khoa-hoc', 'gioi-thieu', 'faq', 'lien-he'];
+    // =========================================================================
+    // DỮ LIỆU CÁC BÀI VIẾT TRONG TAB "GÓC CHIA SẺ"
+    // Muốn đăng bài mới hàng ngày, bạn chỉ cần copy thêm 1 khối {...} vào đầu danh sách này!
+    // =========================================================================
+    const articlesData = [
+      {
+        id: "bai-1",
+        category: "Mất gốc",
+        date: "17/11/2026",
+        title: "5 Mẫu Câu Chào Hỏi & Làm Quen Tự Nhiên Thay Cho 'How Are You?'",
+        description: "Người bản xứ hiếm khi chỉ dùng 'How are you? I'm fine, thank you'. Hãy bỏ túi ngay 5 cách chào hỏi tự nhiên và thân thiện trong giao tiếp hàng ngày.",
+        keywords: ["#tieng-anh-giao-tiep", "#nguoi-mat-goc", "#mau-cau-thong-dung", "#chao-hoi"],
+        content: `
+          <p>Khi mới bắt đầu học tiếng Anh giao tiếp, đa số chúng ta đều quen thuộc với câu hỏi kinh điển <em>"How are you?"</em>. Tuy nhiên, trong đời sống thực tế, người nước ngoài thường sử dụng các cách diễn đạt gần gũi hơn.</p>
+          <h4>1. Các mẫu câu hỏi thăm tự nhiên:</h4>
+          <div class="vocab-box">
+            <ul>
+              <li><strong>How’s it going?</strong> – Dạo này mọi việc thế nào rồi? (Dùng rất phổ biến)</li>
+              <li><strong>What’s new?</strong> – Có gì mới không bạn?</li>
+              <li><strong>How have you been?</strong> – Dạo này bạn khỏe không? (Dùng khi lâu ngày mới gặp)</li>
+              <li><strong>Long time no see!</strong> – Lâu quá không gặp!</li>
+            </ul>
+          </div>
+          <h4>2. Cách đáp lại tự nhiên:</h4>
+          <ul>
+            <li><strong>Pretty good, thanks. And you?</strong> – Khá tốt, cảm ơn bạn. Còn bạn thì sao?</li>
+            <li><strong>Can't complain!</strong> – Mọi thứ đều ổn cả!</li>
+            <li><strong>Same as usual.</strong> – Vẫn như mọi khi thôi.</li>
+          </ul>
+          <p><strong>Lời khuyên từ Thầy Trần:</strong> Hãy tập nói to thành tiếng mỗi mẫu câu 5 lần trước gương để tạo phản xạ tự nhiên thay vì dịch từng từ trong đầu.</p>
+        `
+      },
+      {
+        id: "bai-2",
+        category: "Công sở",
+        date: "15/11/2026",
+        title: "Từ Vựng & Mẫu Câu Tiếng Anh Giao Tiếp Trong Nhà Máy, Công Ty Sản Xuất",
+        description: "Tổng hợp các thuật ngữ và mẫu câu thiết yếu dành cho nhân viên QA/QC, kỹ thuật, sản xuất và văn phòng làm việc tại các khu công nghiệp Đồng Nai.",
+        keywords: ["#tieng-anh-cong-so", "#qa-qc", "#tieng-anh-di-lam", "#bien-hoa"],
+        content: `
+          <p>Tại các khu công nghiệp ở Biên Hòa – Đồng Nai (như Amata, Biên Hòa 2, Hố Nai...), việc nắm vững các mẫu câu giao tiếp công xưởng giúp bạn tự tin trao đổi với quản lý và chuyên gia nước ngoài.</p>
+          <h4>1. Từ vựng chuyên ngành thường gặp:</h4>
+          <div class="vocab-box">
+            <ul>
+              <li><strong>Defect / Defective product:</strong> Sản phẩm lỗi</li>
+              <li><strong>Inspection:</strong> Kiểm tra chất lượng</li>
+              <li><strong>Production line:</strong> Dây chuyền sản xuất</li>
+              <li><strong>Deadline / Lead time:</strong> Thời hạn hoàn thành / Thời gian giao hàng</li>
+            </ul>
+          </div>
+          <h4>2. Mẫu câu báo cáo tình huống nhanh:</h4>
+          <ul>
+            <li><strong>We found a minor defect on line 2.</strong> – Chúng tôi phát hiện một lỗi nhỏ ở chuyền số 2.</li>
+            <li><strong>We are fixing the issue right now.</strong> – Chúng tôi đang khắc phục sự cố ngay bây giờ.</li>
+            <li><strong>Could you please double-check this report?</strong> – Bạn vui lòng kiểm tra lại báo cáo này giúp tôi nhé?</li>
+          </ul>
+        `
+      },
+      {
+        id: "bai-3",
+        category: "Phản xạ",
+        date: "12/11/2026",
+        title: "Bí Quyết Luyện Phản Xạ Nghe – Nói 15 Phút Mỗi Ngày Cho Người Bận Rộn",
+        description: "Không cần học 2-3 tiếng mỗi ngày, chỉ với 15 phút áp dụng phương pháp Shadowing đúng cách, khả năng nghe hiểu và phát âm của bạn sẽ cải thiện rõ rệt.",
+        keywords: ["#luyen-phan-xa", "#shadowing", "#phat-am-chuan", "#tu-hoc-tieng-anh"],
+        content: `
+          <p>Nhiều học viên đi làm tại Biên Hòa chia sẻ rằng họ không có nhiều thời gian ở nhà để học tiếng Anh. Bí quyết nằm ở sự <strong>đều đặn 15 phút mỗi ngày</strong> thay vì học dồn vào cuối tuần.</p>
+          <h4>Quy trình 3 bước luyện tập 15 phút:</h4>
+          <div class="vocab-box">
+            <ul>
+              <li><strong>5 phút đầu (Nghe hiểu):</strong> Chọn một đoạn hội thoại ngắn khoảng 1 phút, nghe và nắm ý chính.</li>
+              <li><strong>5 phút tiếp theo (Kỹ thuật Shadowing):</strong> Vừa nghe vừa nhại lại y hệt ngữ điệu, nhấn âm của người nói mà không cần nhìn chữ.</li>
+              <li><strong>5 phút cuối (Tự đặt câu):</strong> Lấy 2 cấu trúc hay nhất trong bài và tự đặt câu gắn với công việc của chính bạn.</li>
+            </ul>
+          </div>
+          <p>Kiên trì áp dụng phương pháp này trong 30 ngày, bạn sẽ thấy miệng lưỡi linh hoạt hơn và không còn bị "đơ" khi gặp người nước ngoài.</p>
+        `
+      },
+      {
+        id: "bai-4",
+        category: "Công sở",
+        date: "09/11/2026",
+        title: "Cách Trả Lời Câu Hỏi 'Tell Me About Yourself' Khi Phỏng Vấn Xin Việc",
+        description: "Hướng dẫn cấu trúc 3 phần giúp bạn giới thiệu bản thân mạch lạc, chuyên nghiệp và ghi điểm tuyệt đối với nhà tuyển dụng bằng tiếng Anh.",
+        keywords: ["#phong-van-xin-viec", "#tieng-anh-thuong-mai", "#gioi-thieu-ban-than"],
+        content: `
+          <p>Câu hỏi mở đầu <em>"Tell me about yourself"</em> (Hãy giới thiệu về bản thân bạn) quyết định tới 70% ấn tượng đầu tiên của nhà tuyển dụng.</p>
+          <h4>Công thức 3 bước: Hiện tại – Quá khứ – Tương lai</h4>
+          <div class="vocab-box">
+            <ul>
+              <li><strong>Bước 1 (Hiện tại):</strong> Tên, chuyên ngành hoặc vị trí công việc hiện tại của bạn.</li>
+              <li><strong>Bước 2 (Quá khứ):</strong> Kinh nghiệm làm việc hoặc kỹ năng nổi bật nhất bạn đã tích lũy.</li>
+              <li><strong>Bước 3 (Tương lai):</strong> Lý do bạn ứng tuyển và mong muốn đóng góp cho công ty.</li>
+            </ul>
+          </div>
+          <p><strong>Ví dụ mẫu:</strong> <em>"Hi, I’m Minh. I have 3 years of experience working in quality control in Dong Nai. I’m detail-oriented and good at problem-solving. I’m excited to apply for this position to contribute to your production team."</em></p>
+        `
+      }
+    ];
+
+    let currentCategory = 'all';
+
+    // Render danh sách bài viết ra giao diện
+    function renderArticles(articles) {
+      const container = document.getElementById('blog-list');
+      if (articles.length === 0) {
+        container.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">Không tìm thấy bài viết nào phù hợp với từ khóa của bạn.</div>`;
+        return;
+      }
+
+      container.innerHTML = articles.map(article => `
+        <article class="blog-card">
+          <div>
+            <!-- Thanh tiêu đề bài viết -->
+            <div class="blog-card-header">
+              <div class="blog-meta">
+                <span>📂 ${article.category}</span>
+                <span>📅 ${article.date}</span>
+              </div>
+              <h3 class="blog-title">${article.title}</h3>
+            </div>
+
+            <!-- Mô tả bài viết -->
+            <div class="blog-card-body">
+              <p class="blog-desc">${article.description}</p>
+              
+              <div>
+                <!-- Keywords của từng bài viết -->
+                <div class="blog-keywords" aria-label="Từ khóa bài viết">
+                  ${article.keywords.map(kw => `<span class="kw-tag" onclick="searchByKeyword('${kw}')">${kw}</span>`).join('')}
+                </div>
+                <button class="read-more-btn" onclick="openArticleModal('${article.id}')">Đọc chi tiết bài viết →</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // Lọc bài viết theo ô tìm kiếm & danh mục
+    function filterArticles() {
+      const query = document.getElementById('blog-search').value.toLowerCase().trim();
+      const filtered = articlesData.filter(article => {
+        const matchCategory = (currentCategory === 'all') || (article.category === currentCategory);
+        const matchText = article.title.toLowerCase().includes(query) ||
+                          article.description.toLowerCase().includes(query) ||
+                          article.keywords.some(kw => kw.toLowerCase().includes(query));
+        return matchCategory && matchText;
+      });
+      renderArticles(filtered);
+    }
+
+    function setCategoryFilter(category, btnElement) {
+      currentCategory = category;
+      document.querySelectorAll('.filter-chip').forEach(btn => btn.classList.remove('active'));
+      btnElement.classList.add('active');
+      filterArticles();
+    }
+
+    function searchByKeyword(keyword) {
+      const searchInput = document.getElementById('blog-search');
+      searchInput.value = keyword;
+      filterArticles();
+    }
+
+    // Mở khung đọc chi tiết bài viết & cập nhật meta SEO động
+    function openArticleModal(articleId) {
+      const article = articlesData.find(a => a.id === articleId);
+      if (!article) return;
+
+      document.getElementById('modal-meta').textContent = `📂 ${article.category}  •  📅 ${article.date}`;
+      document.getElementById('modal-title').textContent = article.title;
+      document.getElementById('modal-desc').textContent = article.description;
+      document.getElementById('modal-content').innerHTML = article.content;
+      document.getElementById('modal-keywords').innerHTML = `<strong style="font-size: 0.85rem; color: var(--text-muted);">Keywords:</strong> ` +
+        article.keywords.map(kw => `<span class="kw-tag">${kw}</span>`).join('');
+
+      // Cập nhật thẻ meta title, description, keywords của trang khi đang đọc bài
+      document.title = `${article.title} | Anh Văn Giao Tiếp Biên Hòa`;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', article.description);
+      const metaKw = document.querySelector('meta[name="keywords"]');
+      if (metaKw) metaKw.setAttribute('content', article.keywords.join(', ').replace(/#/g, ''));
+
+      document.getElementById('article-modal-backdrop').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeArticleModal(event) {
+      if (event && event.target !== event.currentTarget) return;
+      document.getElementById('article-modal-backdrop').classList.remove('open');
+      document.body.style.overflow = '';
+      document.title = 'Trung Tâm Anh Văn Giao Tiếp Biên Hòa | Đồng Nai';
+    }
+
+    // =========================================================================
+    // QUẢN LÝ CHUYỂN ĐỔI 6 TABS
+    // =========================================================================
+    const validTabs = ['trang-chu', 'khoa-hoc', 'goc-chia-se', 'gioi-thieu', 'faq', 'lien-he'];
 
     function openTab(tabId, updateHash = true) {
       if (!validTabs.includes(tabId)) {
         tabId = 'trang-chu';
       }
 
-      // 1. Ẩn toàn bộ các khung nội dung tab
       document.querySelectorAll('.tab-panel').forEach(panel => {
         panel.classList.remove('active');
       });
 
-      // 2. Bỏ trạng thái active ở toàn bộ nút menu
       document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.classList.remove('active');
       });
 
-      // 3. Hiển thị khung nội dung được chọn
       const targetPanel = document.getElementById(tabId);
       if (targetPanel) {
         targetPanel.classList.add('active');
       }
 
-      // 4. Đánh dấu active cho nút menu tương ứng
       const activeBtn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
       if (activeBtn) {
         activeBtn.classList.add('active');
       }
 
-      // 5. Cập nhật đường dẫn URL hash (VD: #khoa-hoc) để tiện chia sẻ link từng tab
       if (updateHash && history.pushState) {
         history.pushState(null, null, '#' + tabId);
       }
 
-      // 6. Cuộn mượt lên đầu trang
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Tự động mở đúng tab nếu người dùng truy cập link có chứa #hash (VD: domain.com/#khoa-hoc)
     window.addEventListener('DOMContentLoaded', () => {
+      renderArticles(articlesData);
       const hash = window.location.hash.replace('#', '');
       if (validTabs.includes(hash)) {
         openTab(hash, false);
       }
     });
 
-    // Hỗ trợ nút Back / Forward trên trình duyệt khi chuyển tab
     window.addEventListener('popstate', () => {
       const hash = window.location.hash.replace('#', '') || 'trang-chu';
       openTab(hash, false);
