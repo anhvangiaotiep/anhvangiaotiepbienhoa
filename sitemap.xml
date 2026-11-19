@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://anhvangiaotiepbienhoa.pages.dev/</loc>
-    <lastmod>2026-11-17T06:14:21+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://anhvangiaotiepbienhoa.pages.dev/tieng-anh-giao-tiep-bien-hoa</loc>
-    <lastmod>2026-11-17T06:14:21+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://anhvangiaotiepbienhoa.pages.dev/trung-tam-tieng-anh-giao-tiep-bien-hoa</loc>
-    <lastmod>2026-11-17T06:14:21+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://anhvangiaotiepbienhoa.pages.dev/khoa-hoc-tieng-anh-giao-tiep-bien-hoa</loc>
-    <lastmod>2026-11-17T06:14:21+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
+-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+-<url>
+
+<loc>https://anhvangiaotiepbienhoa.pages.dev/</loc>
+
+<lastmod>2026-11-17</lastmod>
+
+</url>
+
+
+-<url>
+
+<loc>https://anhvangiaotiepbienhoa.pages.dev/tieng-anh-giao-tiep-bien-hoa/</loc>
+
+<lastmod>2026-11-17</lastmod>
+
+</url>
+
+
+-<url>
+
+<loc>https://anhvangiaotiepbienhoa.pages.dev/trung-tam-tieng-anh-giao-tiep-bien-hoa/</loc>
+
+<lastmod>2026-11-17</lastmod>
+
+</url>
+
+
+-<url>
+
+<loc>https://anhvangiaotiepbienhoa.pages.dev/khoa-hoc-tieng-anh-giao-tiep-bien-hoa/</loc>
+
+<lastmod>2026-11-17</lastmod>
+
+</url>
+
 </urlset>
